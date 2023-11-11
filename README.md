@@ -26,5 +26,5 @@ Let's discuss somethings about _**Creational Design Patterns**_ which essesntial
     - So, a class to be eligible to become singleton, a private constructor, the instant variable to hold the object (initially null for lazy loading & an object for eager loading which is not recommended beacause of lack of information which class loading leads to error or application slow) and one public static method is required from that class.
     - Why static? because it can be called before instantiating the class aswell.
 > We built what we required, but this has a biggest problem. This creates problem of return two different objects in a multithreaded environment.
-Keeping one synchronised block for a object creation line also fails in a scenario when one thread checks the conditions and not initialise the object yet and thread 2 comes in checking true conditions and endup creating two different objects.
-- So, double lock system is required to avoid these problems (as coded).
+Keeping one synchronised block for a object creation line also fails in a scenario when one thread checks the conditions and not initialise the object yet and thread 2 comes in checking true conditions and endup creating two different objects. So, double lock system is required to avoid these problems (as coded).
+
