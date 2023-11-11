@@ -19,9 +19,9 @@ Let's discuss somethings about _**Creational Design Patterns**_ which essesntial
     - When no attributes in  a class
     - When all objects do same work
     - When objects are immutable (attributes are not changeable)
-4. How can this be acheived?
+4. How can this be achieved?
     - I considered normal class which has public constructor. Then, Can it become signleton class? No. Why because.! As long as it is there, multiple objects can be created irrespecive of what the context is.
-    - Now I made constructor private to acheive this, but now, objects not at all be created. But this can be accessed only inside that class.
+    - Now I made constructor private to achieve this, but now, objects not at all be created. But this can be accessed only inside that class.
     - So, we can think in a way such that having a method which returns the same object based on some check whenever we call this. Which makes this class singleton.
     - So, a class to be eligible to become singleton, a private constructor, the instant variable to hold the object (initially null for lazy loading & an object for eager loading which is not recommended beacause of lack of information which class loading leads to error or application slow) and one public static method is required from that class.
     - Why static? because it can be called before instantiating the class aswell.
