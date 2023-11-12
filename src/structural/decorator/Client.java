@@ -18,6 +18,5 @@ public class Client {
                                                         )))));
         System.out.println("The total cost of ice cream is: " + icecream.getCost());
         icecream.printDescription();
-
     }
 }
